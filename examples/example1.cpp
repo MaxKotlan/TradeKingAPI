@@ -21,7 +21,7 @@
 //* SOFTWARE.
 //*
 //* PROJ: TradeKingAPI
-//* FILE: main.cpp
+//* FILE: example1.cpp
 //* AUTH: Max Kotlan
 //*
 

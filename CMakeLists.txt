@@ -9,5 +9,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 #build extern libraries
 add_subdirectory(extern)
 
-#buld source
+#build source
 add_subdirectory(src)
+
+#build examples
+add_subdirectory(examples)

@@ -1,2 +1,2 @@
 #build executable
-add_executable(TradeKingAPI main.cpp)
+#add_library(TradeKingAPI)
