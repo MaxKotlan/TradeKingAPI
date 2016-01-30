@@ -1,0 +1,4 @@
+[submodule "extern/cpp-netlib"]
+	path = extern/cpp-netlib
+	url = https://github.com/cpp-netlib/cpp-netlib.git
+	branch = 0.11-devel
