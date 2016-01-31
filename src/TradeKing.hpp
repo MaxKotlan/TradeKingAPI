@@ -27,29 +27,10 @@
 
 #pragma once
 
-#include <string.h>
-
 namespace tka{
 
-    /*Base Class for Any Catagory of API Access*/
-    class Request{
+  class TradeKing{
 
-      protected:
-
-          /*Gets Data From URL*/
-          std::string get(std::string url);
-
-          /*Posts Data To URl*/
-          void post(std::string url);
-
-    };
-
-    class Market : Request {
-        void Ask();
-    };
-
-    class TradeKing{
-        Market market;
-    };
+  };
 
 }
