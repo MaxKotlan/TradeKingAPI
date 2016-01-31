@@ -5,6 +5,7 @@ TradeKingAPI, just as the name says, is an API for accessing TradeKing market an
  - Pull Information from TradeKing Servers
  - Push Information to TradeKing Servers
  - Divide code into appropriate classes
+
 ## Version
 0.0.1
 ## Status
