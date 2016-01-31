@@ -1,3 +1,5 @@
 #build executable
 include_directories(${CMAKE_SOURCE_DIR}/include)
-#add_library(libtradeking Market.cpp)
+include_directories(${CMAKE_SOURCE_DIR}/extern/cpp-netlib)
+include_directories(${Boost_INCLUDE_DIR})
+add_library(libtradeking Request.cpp)

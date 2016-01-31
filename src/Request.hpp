@@ -21,16 +21,22 @@
 //* SOFTWARE.
 //*
 //* PROJ: TradeKingAPI
-//* FILE: example1.cpp
+//* FILE: Request.hpp
 //* AUTH: Max Kotlan
 //*
 
-#include <iostream>
-//#include <Request.hpp>
+#pragma once
 
-int main(int argc,const char** argv){
-  //  tk::Request req;
-  //  req.get("google.com");
-    std::cout << "Hello TradeKing!" << std::endl;
-    return 0;
+#include <string>
+
+namespace tk{
+
+  class Request {
+    protected:
+      void get(std::string url);
+      //void post();
+
+
+  };
+
 }

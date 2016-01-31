@@ -21,16 +21,21 @@
 //* SOFTWARE.
 //*
 //* PROJ: TradeKingAPI
-//* FILE: example1.cpp
+//* FILE: Request.cpp
 //* AUTH: Max Kotlan
 //*
 
-#include <iostream>
-//#include <Request.hpp>
+#include "Request.hpp"
 
-int main(int argc,const char** argv){
-  //  tk::Request req;
-  //  req.get("google.com");
-    std::cout << "Hello TradeKing!" << std::endl;
-    return 0;
+#include <iostream>
+#include <boost/network/protocol/http/client.hpp>
+
+void tk::Request::get(std::string url){
+  using namespace boost::network;
+
+  http::client client;
+  http::client::request request("http://garbagelist.duckdns.org");
+  request << header("Connection", "close");
+  http::client::response response = client.get(request);
+  std::cout << body(response) << std::endl;
 }
