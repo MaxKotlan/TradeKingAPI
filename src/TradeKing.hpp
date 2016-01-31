@@ -27,9 +27,26 @@
 
 #pragma once
 
+#include <string.h>
+
 namespace tka{
 
-    #include "Market.h"
+    /*Base Class for Any Catagory of API Access*/
+    class Request{
+
+      protected:
+
+          /*Gets Data From URL*/
+          std::string get(std::string url);
+
+          /*Posts Data To URl*/
+          void post(std::string url);
+
+    };
+
+    class Market : Request {
+        void Ask();
+    };
 
     class TradeKing{
         Market market;
